@@ -1,0 +1,11 @@
+one:
+  id: 1
+  user_id: 1
+  currency_code: CodeOne
+  created_at: <%= Date.today - 1.day %>
+
+two:
+  id: 2
+  user_id: 1
+  currency_code: CodeTwo
+  created_at: <%= Date.today - 1.day %>

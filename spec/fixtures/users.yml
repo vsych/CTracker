@@ -1,0 +1,13 @@
+one:
+  <% salt = BCrypt::Engine.generate_salt %>
+  id: 1
+  email: "one@example.com"
+  password_salt: <%= salt %>
+  encrypted_password: <%= BCrypt::Engine.hash_secret("Password123!", salt) %>
+
+two:
+  <% salt = BCrypt::Engine.generate_salt %>
+  id: 2
+  email: "two@example.com"
+  password_salt: <%= salt %>
+  encrypted_password: <%= BCrypt::Engine.hash_secret("Password123!", salt) %>

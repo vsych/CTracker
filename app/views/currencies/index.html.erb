@@ -1,0 +1,54 @@
+<section>
+
+  <h1>Currencies</h1>
+
+  <div class="charts">
+   <div id="currencies_chart_div"></div>
+    <div id="collected_currencies_chart" class="simple_pie_chart" width='300px' height='100px'>
+      <table>
+        <tr>
+          <th>Collected</th>
+          <td><%= current_user.currencies.count %></td>
+        </tr><tr>
+          <th>Not Collected</th>
+          <td><%= Currency.count %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="filter">
+    <label for="name-filter">Name</label>
+    <input id="name-filter" name="name" type="text" />
+    <input type="button" value="Check/Uncheck All" id="select-all-controll" data-action="check" disabled="disabled" />
+    <input type="button" value="Collect" id="apply-filter-controll" disabled="disabled" />
+  </div>
+
+  <table id="collection">
+    <thead>
+      <tr>
+        <th></th>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @currencies.each do |currency| %>
+        <tr id="record_<%= currency.code %>">
+          <td><%= check_box_tag("currency[]", currency.code, current_user.collect?(currency),
+                                :id => "currency_#{currency.code}",
+                                :"data-code" => currency.code,
+                                :"data-url" => collect_currency_path(currency),
+                                :"data-dirty" => "false") %></td>
+          <td class="name"><%= currency.name %></td>
+          <td class="code"><%= currency.code %></td>
+          <td class="status"><%= current_user.collect?(currency) ? 'Collected' : 'Not Collected' %></td>
+          <td><%= link_to 'Show', currency %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>

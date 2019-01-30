@@ -1,0 +1,21 @@
+<%= form_for @session do |f| %>
+  <legend>Login</legend>
+  <% if @session.errors.present? %>
+    <ul class='form_errors'>
+      <% @session.errors.each do |key, error| %>
+        <li><%= error %></li>
+      <% end %>
+    </ul>
+  <% end %>
+  <div class="field">
+    <%= f.label :email %>
+    <div class="controll"><%= f.text_field :email %></div>
+  </div>
+  <div class="field">
+    <%= f.label :password %>
+    <div class="controll"><%= f.password_field :password %></div>
+  </div>
+  <div class="controll">
+    <%= f.submit "Login" %>
+  </div>
+<% end %>

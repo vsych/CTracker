@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: NameOne
+  code: CodeOne
+  country_id: CodeOne
+
+two:
+  name: NameTwo
+  code: CodeTwo
+  country_id: CodeOne
+
+three:
+  name: NameThree
+  code: CodeThree
+  country_id: CodeThree
+
+four:
+  name: NameFour
+  code: NameFour
+  country_id: CodeThree

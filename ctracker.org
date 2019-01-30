@@ -1,0 +1,129 @@
+#+STARTUP: showall
+#+BEGIN: clocktable :maxlevel 2 :scope file
+Clock summary at [2012-10-25 Thu 12:08]
+
+| Headline                                                                         |    Time |
+|----------------------------------------------------------------------------------+---------|
+| *Total time*                                                                     | *19:06* |
+|----------------------------------------------------------------------------------+---------|
+| DONE Setup. Understand the task. Read existed code.                              |    0:37 |
+| DONE Rake task                                                                   |    0:07 |
+| DONE Improve database structure                                                  |    0:11 |
+| DONE Add user model and test for it                                              |    0:59 |
+| DONE Create secure login                                                         |    1:58 |
+| DONE Show only user's data                                                       |    0:42 |
+| DONE Rspecs for countries and currencies                                         |    0:10 |
+| DONE Tracking visited countries by users                                         |    2:11 |
+| DONE Styling login page and show errors on it                                    |    0:36 |
+| DONE Update users password validation                                            |    0:02 |
+| DONE Collect all currencies when visit country                                   |    0:23 |
+| DONE Remove currencies from collection if country was mark as visited by mistake |    0:03 |
+| DONE Rewrite manage countries features                                           |    1:29 |
+| DONE Update Counties#show page and remove update                                 |    0:09 |
+| DONE It should update chart after country visiting                               |    0:18 |
+| DONE Collecting currencies on user model level                                   |    0:17 |
+| DONE Currencies index and show page                                              |    0:13 |
+| DONE Visit country on collection update                                          |    0:52 |
+| DONE Give user opportunity to mark currency as selected                          |    0:57 |
+| DONE Fix chart data                                                              |    0:06 |
+| DONE Filter on country page and "check/uncheck" controll                         |    1:04 |
+| DONE Filter on currencies page                                                   |    0:37 |
+| DONE Add apply controll                                                          |    0:14 |
+| DONE Progress chart                                                              |    2:15 |
+| DONE Rewrite from hbtm to has_many                                               |    1:52 |
+| DONE Create seed data                                                            |    0:44 |
+#+END:
+#+STARTUP: hidestars
+#+STARTUP: logdone
+#+TODO: TODO INPROGRESS WAIT VERIFY | DONE NOTDONE REJECTED
+
+* DONE Setup. Understand the task. Read existed code.
+  CLOSED: [2012-10-19 Fri 09:24]
+  CLOCK: [2012-10-19 Fri 08:53]--[2012-10-19 Fri 09:23] =>  0:30
+  CLOCK: [2012-10-19 Fri 08:45]--[2012-10-19 Fri 08:52] =>  0:07
+* DONE Rake task
+  CLOSED: [2012-10-19 Fri 10:37]
+  CLOCK: [2012-10-19 Fri 10:30]--[2012-10-19 Fri 10:37] =>  0:07
+* DONE Improve database structure
+  CLOSED: [2012-10-19 Fri 10:49]
+  CLOCK: [2012-10-19 Fri 10:38]--[2012-10-19 Fri 10:49] =>  0:11
+* DONE Add user model and test for it
+  CLOSED: [2012-10-20 Sat 17:37]
+  CLOCK: [2012-10-20 Sat 17:23]--[2012-10-20 Sat 17:37] =>  0:14
+  CLOCK: [2012-10-19 Fri 13:05]--[2012-10-19 Fri 13:50] =>  0:45
+* DONE Create secure login
+  CLOSED: [2012-10-21 Sun 00:10]
+  CLOCK: [2012-10-20 Sat 23:48]--[2012-10-21 Sun 00:09] =>  0:21
+  CLOCK: [2012-10-20 Sat 22:23]--[2012-10-20 Sat 23:13] =>  0:50
+  CLOCK: [2012-10-20 Sat 19:47]--[2012-10-20 Sat 20:00] =>  0:13
+  CLOCK: [2012-10-20 Sat 17:37]--[2012-10-20 Sat 18:11] =>  0:34
+* DONE Show only user's data
+  CLOSED: [2012-10-21 Sun 19:05]
+  CLOCK: [2012-10-21 Sun 17:52]--[2012-10-21 Sun 18:34] =>  0:42
+* DONE Rspecs for countries and currencies
+  CLOSED: [2012-10-21 Sun 20:21]
+  CLOCK: [2012-10-21 Sun 20:10]--[2012-10-21 Sun 20:20] =>  0:10
+* DONE Tracking visited countries by users
+  CLOSED: [2012-10-22 Mon 20:23]
+  CLOCK: [2012-10-22 Mon 19:29]--[2012-10-22 Mon 20:23] =>  0:54
+  CLOCK: [2012-10-22 Mon 18:45]--[2012-10-22 Mon 19:00] =>  0:15
+  Stuck on my own finder code
+  CLOCK: [2012-10-22 Mon 13:05]--[2012-10-22 Mon 14:07] =>  1:02
+* DONE Styling login page and show errors on it
+  CLOSED: [2012-10-22 Mon 22:14]
+  CLOCK: [2012-10-22 Mon 21:38]--[2012-10-22 Mon 22:14] =>  0:36
+* DONE Update users password validation
+  CLOSED: [2012-10-22 Mon 22:18]
+  CLOCK: [2012-10-22 Mon 22:16]--[2012-10-22 Mon 22:18] =>  0:02
+* DONE Collect all currencies when visit country
+  CLOSED: [2012-10-22 Mon 22:46]
+  Spend time on fixtures associations
+  CLOCK: [2012-10-22 Mon 22:23]--[2012-10-22 Mon 22:46] =>  0:23
+* DONE Remove currencies from collection if country was mark as visited by mistake
+  CLOSED: [2012-10-22 Mon 22:58]
+  CLOCK: [2012-10-22 Mon 22:55]--[2012-10-22 Mon 22:58] =>  0:03
+* DONE Rewrite manage countries features
+  CLOSED: [2012-10-23 Tue 00:33]
+  CLOCK: [2012-10-22 Mon 23:04]--[2012-10-23 Tue 00:33] =>  1:29
+* DONE Update Counties#show page and remove update
+  CLOSED: [2012-10-23 Tue 01:12]
+  CLOCK: [2012-10-23 Tue 00:41]--[2012-10-23 Tue 00:50] =>  0:09
+* DONE It should update chart after country visiting
+  CLOSED: [2012-10-23 Tue 11:32]
+  CLOCK: [2012-10-23 Tue 11:14]--[2012-10-23 Tue 11:32] =>  0:18
+* DONE Collecting currencies on user model level
+  CLOSED: [2012-10-23 Tue 11:53]
+  CLOCK: [2012-10-23 Tue 11:35]--[2012-10-23 Tue 11:52] =>  0:17
+* DONE Currencies index and show page
+  CLOSED: [2012-10-23 Tue 12:08]
+  CLOCK: [2012-10-23 Tue 11:55]--[2012-10-23 Tue 12:08] =>  0:13
+* DONE Visit country on collection update
+  CLOSED: [2012-10-23 Tue 13:02]
+  CLOCK: [2012-10-23 Tue 12:10]--[2012-10-23 Tue 13:02] =>  0:52
+* DONE Give user opportunity to mark currency as selected
+  CLOSED: [2012-10-23 Tue 14:07]
+  CLOCK: [2012-10-23 Tue 13:10]--[2012-10-23 Tue 14:07] =>  0:57
+* DONE Fix chart data
+  CLOSED: [2012-10-23 Tue 14:21]
+  CLOCK: [2012-10-23 Tue 14:15]--[2012-10-23 Tue 14:21] =>  0:06
+* DONE Filter on country page and "check/uncheck" controll
+  CLOSED: [2012-10-23 Tue 16:01]
+  CLOCK: [2012-10-23 Tue 15:41]--[2012-10-23 Tue 16:01] =>  0:20
+  CLOCK: [2012-10-23 Tue 14:55]--[2012-10-23 Tue 15:39] =>  0:44
+* DONE Filter on currencies page
+  CLOSED: [2012-10-23 Tue 16:44]
+  CLOCK: [2012-10-23 Tue 16:07]--[2012-10-23 Tue 16:44] =>  0:37
+* DONE Add apply controll
+  CLOSED: [2012-10-23 Tue 17:57]
+  CLOCK: [2012-10-23 Tue 16:50]--[2012-10-23 Tue 17:04] =>  0:14
+* DONE Progress chart
+  CLOSED: [2012-10-25 Thu 11:17]
+  CLOCK: [2012-10-25 Thu 10:22]--[2012-10-25 Thu 11:16] =>  0:54
+  CLOCK: [2012-10-25 Thu 02:24]--[2012-10-25 Thu 03:07] =>  0:43
+  CLOCK: [2012-10-24 Wed 21:59]--[2012-10-24 Wed 22:37] =>  0:38
+* DONE Rewrite from hbtm to has_many
+  CLOSED: [2012-10-25 Thu 02:21]
+  CLOCK: [2012-10-25 Thu 00:29]--[2012-10-25 Thu 02:21] =>  1:52
+* DONE Create seed data
+  CLOSED: [2012-10-25 Thu 12:08]
+  CLOCK: [2012-10-25 Thu 11:24]--[2012-10-25 Thu 12:08] =>  0:44

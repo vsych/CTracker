@@ -1,0 +1,56 @@
+<section>
+
+  <h1>Countries</h1>
+
+  <div class="charts">
+    <div id="countries_chart_div"></div>
+    <div id="visited_countries_chart" class="simple_pie_chart" width='300px' height='100px'>
+      <table>
+        <tr>
+          <th>Visited</th>
+          <td><%= current_user.countries.count %></td>
+        </tr>
+        <tr>
+          <th>Not Visited</th>
+          <td><%= Country.count %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <div class="filter">
+    <label for="name-filter">Name</label>
+    <input id="name-filter" name="name" type="text" />
+    <input type="button" value="Check/Uncheck All" id="select-all-controll" data-action="check" disabled="disabled" />
+    <input type="button" value="Visit" id="apply-filter-controll" disabled="disabled" />
+  </div>
+
+  <table id="collection">
+    <thead>
+      <tr>
+        <th>Visited</th>
+        <th>Name</th>
+        <th>Code</th>
+        <th>Status</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @countries.each do |country| %>
+        <tr id="record_<%= country.code %>">
+          <td><%= check_box_tag("country[]", country.code, current_user.visited?(country),
+                                :id => "country_#{country.code}",
+                                :"data-code" => country.code,
+                                :"data-url" => visit_country_path(country),
+                                :"data-dirty" => "false") %></td>
+          <td class="name"><%= country.name %></td>
+          <td class="code"><%= country.code %></td>
+          <td class="status"><%= current_user.visited?(country) ? 'Visited' : 'Not Visited' %></td>
+          <td><%= link_to 'Show', country %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</section>
